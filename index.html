@@ -12,10 +12,11 @@
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10./css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
      
      <link rel="stylesheet" href="styles.css">
-    <title>Projeto Player Spotgy</title>
+    <title>Projeto Player Spotify</title>
 </head>
 <body>
     <div class="contains">
+        <div class="bg">
     <!--Imagens, Nome da musica e do artista-->
     <img src="imagens/rap.jpg" alt="">
     <div class="descricao">
@@ -40,15 +41,22 @@
     </div>
 
     <div class="player">
-     <i class="fas fa-step-backward setas anterior"></i>
+
+        <img src="imagens/previous.svg" class="setas anterior">
+        <img src="imagens/play.svg" class="botao-play">
+        <img src="imagens/pause.svg" class="botao-pause">
+        <img src="imagens/Next.svg" class="setas proxima">
+
+    <!--<i class="fas fa-step-backward setas anterior"></i>
         <i class="fas fa-play-circle botao-play"></i>
         <i class="fas fa-pause-circle botao-pause"></i>
-        <i class="fas fa-step-forward setas proxima"></i>
+        <i class="fas fa-step-forward setas proxima"></i>-->
     </div>
     
     <audio src="musicas/Djonga.mp3" class="msc"></audio>
     
 <!--final da div contains-->
+</div>
 </div>
 
 <script src="script.js"></script>
