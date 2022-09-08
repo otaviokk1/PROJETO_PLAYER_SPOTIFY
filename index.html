@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+     integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" 
+     crossorigin="anonymous"></script>
+
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10./css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+     
+     <link rel="stylesheet" href="styles.css">
+    <title>Projeto Player Spotgy</title>
+</head>
+<body>
+    <div class="contains">
+    <!--Imagens, Nome da musica e do artista-->
+    <img src="imagens/rap.jpg" alt="">
+    <div class="descricao">
+        <h2>Olhos de Tigre</h2>
+        <i>Djonga</i>
+    </div>
+
+    <div class="duracao">
+        <div class="barra">
+            <!--PROGRESS adicionar a barra de progreção da musica-->
+            <!--Value coloca o tanto que tocou da musica neste exemplo-->
+            <!--MAX tamanho maximo do valor-->
+            <progress value="0" max="1"></progress>
+            <div class="ponto"></div>
+        </div>
+        <div class="tempo">
+            <!--tempos abaixo apenas para orientação-->
+            <p class="inicio">0:00</p>
+            <p class="fim">3:40</p>
+        </div>
+    <!--Fim da div duração-->
+    </div>
+
+    <div class="player">
+     <i class="fas fa-step-backward setas anterior"></i>
+        <i class="fas fa-play-circle botao-play"></i>
+        <i class="fas fa-pause-circle botao-pause"></i>
+        <i class="fas fa-step-forward setas proxima"></i>
+    </div>
+    
+    <audio src="musicas/Djonga.mp3" class="msc"></audio>
+    
+<!--final da div contains-->
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
